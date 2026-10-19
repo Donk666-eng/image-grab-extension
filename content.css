@@ -1,0 +1,27 @@
+/* 右下角悬浮按钮样式 */
+#ig-extract-btn {
+  position: fixed;
+  right: 24px;
+  bottom: 80px;
+  z-index: 2147483647;
+  background: linear-gradient(135deg, #4f46e5, #7c3aed);
+  color: #ffffff;
+  border: none;
+  border-radius: 999px;
+  padding: 12px 22px;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(79, 70, 229, 0.35);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+#ig-extract-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 24px rgba(79, 70, 229, 0.5);
+}
+
+#ig-extract-btn:active {
+  transform: translateY(0);
+}

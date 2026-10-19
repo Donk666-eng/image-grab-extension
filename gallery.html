@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>图提取 - 商品图片预览与批量下载</title>
+  <link rel="stylesheet" href="gallery.css">
+</head>
+<body>
+  <header class="toolbar">
+    <div class="toolbar-left">
+      <h1>📦 提取结果预览</h1>
+      <span id="status-text">已选 <strong id="selected-count">0</strong> / <span id="total-count">0</span> 张</span>
+    </div>
+    <div class="toolbar-actions">
+      <button id="btn-select-all" class="btn secondary">全选</button>
+      <button id="btn-invert" class="btn secondary">反选</button>
+      <button id="btn-download" class="btn primary">下载选中 (保存为 PNG)</button>
+    </div>
+  </header>
+
+  <div id="progress-bar" class="progress-bar hidden">
+    <span id="progress-text">正在转换并下载：0 / 0</span>
+  </div>
+
+  <main id="gallery-grid" class="gallery-grid"></main>
+
+  <script src="gallery.js"></script>
+</body>
+</html>
